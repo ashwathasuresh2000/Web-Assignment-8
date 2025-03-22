@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "7d1b56a2-503d-4a45-b4ff-9859202bb036",
+		"name": "Assignment 8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40029031"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/user/create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"fullName\": \"Alice Smith\",\n    \"email\": \"alice.smith@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Bob Johnson\",\n    \"email\": \"bob.johnson@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Charlie Davis\",\n    \"email\": \"charlie.davis@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Diana Evans\",\n    \"email\": \"diana.evans@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Ethan Williams\",\n    \"email\": \"ethan.williams@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Fiona Brown\",\n    \"email\": \"fiona.brown@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"George Miller\",\n    \"email\": \"george.miller@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Hannah Wilson\",\n    \"email\": \"hannah.wilson@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Ian Moore\",\n    \"email\": \"ian.moore@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Julia Taylor\",\n    \"email\": \"julia.taylor@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Kevin Anderson\",\n    \"email\": \"kevin.anderson@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Laura Martinez\",\n    \"email\": \"laura.martinez@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Mark Robinson\",\n    \"email\": \"mark.robinson@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Nancy Thomas\",\n    \"email\": \"nancy.thomas@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Oliver Lee\",\n    \"email\": \"oliver.lee@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Patricia Martin\",\n    \"email\": \"patricia.martin@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Quentin Moore\",\n    \"email\": \"quentin.moore@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Rachel Harris\",\n    \"email\": \"rachel.harris@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Samuel Clark\",\n    \"email\": \"samuel.clark@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  },\n  {\n    \"fullName\": \"Tiffany Lewis\",\n    \"email\": \"tiffany.lewis@example.com\",\n    \"password\": \"StrongP@ssw0rd!\"\n  }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/edit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john.doe@example.com\",\n  \"fullName\": \"John Updated\",\n  \"password\": \"NewStr0ngP@ss!\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john.doe@example.com\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/getAll",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/uploadImage",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "bob.johnson@example.com",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1f006968-5d27-4a30-8d37-1724d7953c82"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/uploadImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"uploadImage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
